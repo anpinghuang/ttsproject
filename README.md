@@ -164,3 +164,7 @@ docker logs tts_tts_1 2>&1 | tail -n 100
 
 curl.exe -X POST "https://tts.fakereal.us/api/tts" -H "text: your message here" --output output.wav
 
+
+
+## chatgpt for help
+https://chatgpt.com/share/68780814-9cd8-800e-a3ef-0bb4d588c556
