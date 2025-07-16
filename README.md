@@ -157,7 +157,9 @@ curl.exe -v -X POST "https://tts.fakereal.us/api/tts" -H "Content-Type: applicat
 
 # debugging
 ## show logs
-docker logs tts_tts_1 2>&1 | tail -n 100
+- check correct container: docker ps
+
+docker logs tts-tts-1
 
 ## use from local PC 
 // tip: only enter words for the input, not URLs because it will start hallucinating if you give it some strange symbols to read. 
