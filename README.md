@@ -189,7 +189,7 @@ model options
 | `tts_models/de/thorsten/tacotron2-DCA`           | German                  | German voice model.                                                   |
 
 
-Save and restart the container:
+Save and restart the container (it takes 1-5 minutes, so if you curl and it doesn't work, that's normal):
 
 docker compose down
 
