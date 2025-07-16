@@ -157,4 +157,5 @@ curl.exe -v -X POST "https://tts.fakereal.us/api/tts" -H "Content-Type: applicat
 
 # debugging
 ## show logs
-docker logs <your_container_name> 2>&1 | tail -n 100
+docker logs tts_tts_1 2>&1 | tail -n 100
+
