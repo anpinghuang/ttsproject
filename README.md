@@ -159,3 +159,7 @@ curl.exe -v -X POST "https://tts.fakereal.us/api/tts" -H "Content-Type: applicat
 ## show logs
 docker logs tts_tts_1 2>&1 | tail -n 100
 
+## use from local PC
+
+curl.exe -X POST "https://tts.fakereal.us/api/tts" -H "text: your message here" --output output.wav
+
