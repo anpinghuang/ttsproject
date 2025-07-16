@@ -190,5 +190,7 @@ model options
 Save and restart the container:
 
 docker compose down
+
+
 docker compose up -d
 
