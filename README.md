@@ -168,3 +168,27 @@ curl.exe -X POST "https://tts.fakereal.us/api/tts" -H "text: your message here" 
 
 ## chatgpt for help
 https://chatgpt.com/share/68780814-9cd8-800e-a3ef-0bb4d588c556
+
+
+## to update with new model
+nano docker-compose.yml
+
+model options
+| Model Name                                       | Language                | Description                                                           |
+| ------------------------------------------------ | ----------------------- | --------------------------------------------------------------------- |
+| `tts_models/en/ljspeech/tacotron2-DDC`           | English                 | ⭐ Most stable. Medium quality, single speaker.                        |
+| `tts_models/en/ljspeech/tacotron2-DDC_ph`        | English                 | Tacotron2 with phoneme support for better pronunciation.              |
+| `tts_models/en/ljspeech/glow-tts`                | English                 | Fast and high-quality Glow-TTS model.                                 |
+| `tts_models/en/ljspeech/fast_pitch`              | English                 | Fast and modern, with pitch control.                                  |
+| `tts_models/en/vctk/vits`                        | English (multi-speaker) | Supports speaker embeddings (VCTK dataset, many voices).              |
+| `tts_models/multilingual/multi-dataset/your_tts` | Multilingual            | Multi-speaker, multi-lingual, supports voice cloning. Very versatile. |
+| `tts_models/en/jenny/jenny`                      | English                 | 🎙️ Trained on female voice “Jenny.” High quality, emotional range.   |
+| `tts_models/fr/mai/tacotron2-DDC`                | French                  | High quality French voice.                                            |
+| `tts_models/de/thorsten/tacotron2-DCA`           | German                  | German voice model.                                                   |
+
+
+Save and restart the container:
+
+docker compose down
+docker compose up -d
+
